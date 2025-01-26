@@ -25,10 +25,10 @@ y0 = μas2rad(-5_000)
 
 rng = StableRNG(12)
 
-dataname = "MOJAVE3C111.2022_09_29.uvf"
+dataname = "hogehoge.uvf"
 comment = ""
 filename = "data/" * dataname  * "_n" * string(noise) * comment
-obs = ehtim.obsdata.load_uvfits("/Users/kenzokawamura/Dev/difmap/MOJAVE/" * dataname)
+obs = ehtim.obsdata.load_uvfits("your/directory/" * dataname)
 obs = scan_average(obs).add_fractional_noise(noise)
 dlcamp, dcphase = extract_table(obs, LogClosureAmplitudes(), ClosurePhases())
 dvis = extract_table(obs, Visibilities())
