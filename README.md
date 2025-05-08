@@ -1,3 +1,49 @@
+# Quick installation
+## 1.  install juliaup
+- install juliaup by [official repository](https://github.com/JuliaLang/juliaup)
+- Be careful for your OS. If you are using MacOS or linux, command below is the best.
+```
+% curl -fsSL https://install.julialang.org | sh
+```
+## 2.  install julia
+- Install julia ver.1.10.6
+- After move onto your directory, use command below
+```
+% juliaup add 1.10.6
+```
+- If you want to use above julia version anytime, use command below
+```
+% juliaup default 1.10.6
+```
+- You can identify julia version list you can utilize
+```
+% juliaup list
+```
+## 3.  git clone
+- After move onto your directory, use command below
+```
+% git clone https://github.com/KenzoKawamura/ComradeAGNjetSample
+```
+## 4.   install package
+- After move onto `ComradeAGNjetSample/imaging/` or `ComradeAGNjetSample/modeling/`, boot Julia via using command below
+```
+% julia
+```
+or if you want to activate multi thread calculation, use command below
+```
+% julia -t <core_number>
+```
+- Use command below in Julia REPL to install packages
+```
+julia> using Pkg
+julia> Pkg.activate(".")
+julia> Pkg.instantiate()
+```
+- Now you can enjoy Comrade imaging after you edit your file path to gain_imaging.jl
+```
+julia> include("./gain_imaging.jl")
+```
+
 # Comrade Installation and Usage Guide
 
 ## Overview
