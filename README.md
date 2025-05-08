@@ -39,7 +39,7 @@ julia> using Pkg
 julia> Pkg.activate(".")
 julia> Pkg.instantiate()
 ```
-- Now you can enjoy Comrade imaging after you edit your file path to gain_imaging.jl
+- Now you can enjoy Comrade imaging after you edit your file path in gain_imaging.jl
 ```
 julia> include("./gain_imaging.jl")
 ```
